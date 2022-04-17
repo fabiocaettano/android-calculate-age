@@ -114,8 +114,6 @@ do botão
 <h2>Lição 86 - Finaliando Interface</h2>
 
 
-<color name="LightGrey">#b7b7a4</color>
-
 1. Alterado a cor primária do tema, no arquivo <u>src >> main >> res >> values >> themes.xml</ul>:
 
 ``` xml
@@ -145,7 +143,7 @@ do botão
 <resources>
     <string name="app_name">Age In Minutes</string>
 </resources>
-``´
+```
 
 4. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> foi alterado o componente Button.
    Incluído novos componentes:
