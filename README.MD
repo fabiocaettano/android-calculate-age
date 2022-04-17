@@ -39,7 +39,7 @@
         android:textStyle="bold"/>
 ```
 
-4. Resultado:
+4. Resultado do App:
 
 ![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/main/app/src/main/res/drawable/screenshot/app-lesson84.PNG)
 
