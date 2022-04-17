@@ -56,7 +56,7 @@
 <li> sp: é escalável conforme o phone; recomendado para utilizar com fonts. </li>
 </ul>
 
-2. No arquivo <u>src>>main>>res>>values>>colors.xml</u> foi incluido o background
+2. No arquivo <u>app >> src >> main >> res >> values >> colors.xml</u> foi incluido o background
 do botão
 
 ``` xml
@@ -65,7 +65,6 @@ do botão
     ...
     <color name="btnBgColor">#2a9d8f</color>
 </resources>
-
 ```
 
 3. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> inserido mais 03 componentes:
@@ -112,3 +111,90 @@ do botão
 ![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson85/screenshot/app-lesson85.PNG)
 
 
+<h2>Lição 86 - Finaliando Interface</h2>
+
+
+<color name="LightGrey">#b7b7a4</color>
+
+1. Alterado a cor primária do tema, no arquivo <u>src >> main >> res >> values >> themes.xml</ul>:
+
+``` xml
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.DOBCalc" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="colorPrimary">@color/textBlue</item>
+        ...
+    </style>
+</resources>
+```
+
+2. No arquivo <u>app >> src >> main >> res >> values >> colors.xml</u> alterada a cor do background:
+
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    ...
+    <color name="bgColor">#F3E2B9</color>
+    ...
+</resources>
+```
+
+3. Alterado o titulo da aplicação no arquivo <u>app >> src >> main >> res >> values >> strings.xml</u>
+
+``` xml
+<resources>
+    <string name="app_name">Age In Minutes</string>
+</resources>
+``´
+
+4. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> foi alterado o componente Button.
+   Incluído novos componentes:
+
+``` xml
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        android:textSize="18sp"
+        android:textColor="@color/LightGrey"
+        android:backgroundTint="@color/btnBgColor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="04/11/1974"
+        android:textColor="@color/textBlue"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Selected Date"
+        android:textColor="@color/LightGrey"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="14000000"
+        android:textColor="@color/textBlue"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Selected Date"
+        android:textColor="@color/LightGrey"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+```
+
+5. Resultados:
+
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson85/screenshot/app-lesson86.PNG)
