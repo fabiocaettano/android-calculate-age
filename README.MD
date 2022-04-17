@@ -41,7 +41,7 @@
 
 4. Resultado:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson85/screenshot/app-lesson84.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson84.PNG)
 
 
 <h2>Lição 85 - Adicionando mais TextViews e entendo SP, DP e pixels.</h2>
@@ -108,7 +108,7 @@ do botão
 ```
 5. Resultado:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson85/screenshot/app-lesson85.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson85.PNG)
 
 
 <h2>Lição 86 - Finaliando Interface</h2>
@@ -195,4 +195,4 @@ do botão
 
 5. Resultados:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson85/screenshot/app-lesson86.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson86.PNG)
