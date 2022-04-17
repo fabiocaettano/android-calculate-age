@@ -48,12 +48,13 @@
 
 1. Conceitos:
 
-px : corresponde ao pixel atual da tela;
+<ul>
+<li> px : corresponde ao pixel atual da tela;</li>
 
-dp: é uma unidade fixa; recomendado para posicionar e dimensionar os componentes;
+<li> dp: é uma unidade fixa; recomendado para posicionar e dimensionar os componentes; </li>
 
-sp: é escalável conforme o phone; recomendado para utilizar com fonts.
-
+<li> sp: é escalável conforme o phone; recomendado para utilizar com fonts. </li>
+</ul>
 
 2. No arquivo <u>src>>main>>res>>values>>colors.xml</u> foi incluido o background
 do botão
