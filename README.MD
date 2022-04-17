@@ -46,10 +46,12 @@
 
 <h2>Lição 85 - Adicionando mais TextViews e entendo SP, DP e pixels.</h2>
 
-1. Conceitos
+1. Conceitos:
 
 px : corresponde ao pixel atual da tela;
+
 dp: é uma unidade fixa; recomendado para posicionar e dimensionar os componentes;
+
 sp: é escalável conforme o phone; recomendado para utilizar com fonts.
 
 
