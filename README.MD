@@ -46,6 +46,10 @@
 
 <h2>Lição 85 - Adicionando mais TextViews e entendo SP, DP e pixels.</h2>
 
+# px : corresponde ao pixel atual da tela;
+# dp: é uma unidade fixa; recomendado para posicionar e dimensionar os componentes;
+# sp: é escalável conforme o phone; recomendado para utilizar com fonts.
+
 
 No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u>
 
@@ -64,7 +68,7 @@ do botão
 2. No arquivo <u>activity.main.xml</u> inserido mais 03 componentes:
 
 ``` xml
-<TextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
