@@ -17,7 +17,7 @@
 
 ```
 
-2. No arquivo activity.main.xml a estrutura foi alterada para <b>LinearLayout</b>.
+2. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> a estrutura foi alterada para <b>LinearLayout</b>.
    E foi incluido as configurações: orientation, background e gravity.
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -26,7 +26,7 @@
     android:background="@color/bgColor"
     android:gravity="center_horizontal">
 ```
-3. Configuração do componente TextView:
+3. Ainda no arquivo <u>activit.main.xml</u> foi configurado o componente TextView:
 
 ``` xml
 <TextView
