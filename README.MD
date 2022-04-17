@@ -46,14 +46,14 @@
 
 <h2>Lição 85 - Adicionando mais TextViews e entendo SP, DP e pixels.</h2>
 
-### px : corresponde ao pixel atual da tela;
-### dp: é uma unidade fixa; recomendado para posicionar e dimensionar os componentes;
-### sp: é escalável conforme o phone; recomendado para utilizar com fonts.
+1. Conceitos
+
+px : corresponde ao pixel atual da tela;
+dp: é uma unidade fixa; recomendado para posicionar e dimensionar os componentes;
+sp: é escalável conforme o phone; recomendado para utilizar com fonts.
 
 
-No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u>
-
-1. No arquivo <u>src>>main>>res>>values>>colors.xml</u> foi incluido o background
+2. No arquivo <u>src>>main>>res>>values>>colors.xml</u> foi incluido o background
 do botão
 
 ``` xml
@@ -65,7 +65,7 @@ do botão
 
 ```
 
-2. No arquivo <u>activity.main.xml</u> inserido mais 03 componentes:
+3. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> inserido mais 03 componentes:
 
 ``` xml
     <TextView
@@ -97,15 +97,14 @@ do botão
         android:backgroundTint="@color/white"/>
 ```
 
-3. Ainda no arquivo <u>activity.main.xml</u> foi inserido um "padding" para os componentes:
+4. Ainda no arquivo <u>activity.main.xml</u> foi inserido um "padding" para os componentes:
 
 ``` xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     ...
     android:padding="16dp">
 ```
-
-4. Resultado:
+5. Resultado:
 
 ![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson85/screenshot/app-lesson85.PNG)
 
