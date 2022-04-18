@@ -17,8 +17,9 @@
 
 ```
 
-2. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> a estrutura foi alterada para <b>LinearLayout</b>.
-   E foi incluido as configurações: orientation, background e gravity.
+2. No arquivo <u>src>>main>>res>>layout>>activity_main.xml</u> a estrutura foi alterada
+para <b>LinearLayout</b>. E foi incluido as configurações: orientation, background e gravity.
+
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     ...
@@ -26,7 +27,8 @@
     android:background="@color/bgColor"
     android:gravity="center_horizontal">
 ```
-3. Ainda no arquivo <u>activity.main.xml</u> foi configurado o componente TextView:
+
+3. Ainda no arquivo <u>activity_main.xml</u> foi configurado o componente TextView:
 
 ``` xml
 <TextView
@@ -67,7 +69,7 @@ do botão
 </resources>
 ```
 
-3. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> inserido mais 03 componentes:
+3. No arquivo <u>src>>main>>res>>layout>>activity_main.xml</u> inserido mais 03 componentes:
 
 ``` xml
     <TextView
@@ -99,13 +101,14 @@ do botão
         android:backgroundTint="@color/white"/>
 ```
 
-4. Ainda no arquivo <u>activity.main.xml</u> foi inserido um "padding" para os componentes:
+4. Ainda no arquivo <u>activity_main.xml</u> foi inserido um "padding" para os componentes:
 
 ``` xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     ...
     android:padding="16dp">
 ```
+
 5. Resultado:
 
 ![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson85.PNG)
@@ -145,7 +148,7 @@ do botão
 </resources>
 ```
 
-4. No arquivo <u>src>>main>>res>>layout>>activity.main.xml</u> foi alterado o componente Button.
+4. No arquivo <u>src>>main>>res>>layout>>activity_main.xml</u> foi alterado o componente Button.
    Incluído novos componentes:
 
 ``` xml
@@ -196,3 +199,35 @@ do botão
 5. Resultados:
 
 ![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson86.PNG)
+
+
+<h2>Lição 87 - Date Picker Dialog</h2>
+
+1. No arquivo <u>src>>main>>res>>layout>>activity_main.xml</u> foi configurado o id do Botão.
+
+``` xml
+    <Button
+    android:id="@+id/btnDatePicker"
+    ...
+    />
+```
+
+2. No arquivo <ul>app >> src >> main >> java >> com.fabiocaettano74.dobcalc >> MainActivity</ul>
+configurar ação do botão para interagir com o componente DatePicker:
+
+``` java
+    fun clickDatePicker(){
+        val myCalendar = Calendar.getInstance()
+        val year = myCalendar.get(Calendar.YEAR)
+        val month = myCalendar.get(Calendar.MONTH)
+        val day = myCalendar.get(Calendar.DAY_OF_MONTH)
+
+        DatePickerDialog(this, DatePickerDialog.OnDateSetListener{view,year,month,dayOfMonth ->
+            Toast.makeText(this,"btnDatePicker pressed", Toast.LENGTH_LONG).show()
+        },
+        year,
+        month,
+        day).show()
+    }
+```
+
