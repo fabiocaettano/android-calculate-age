@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,13 +28,19 @@ class MainActivity : AppCompatActivity() {
     fun clickDatePicker(){
         val myCalendar = Calendar.getInstance()
         val year = myCalendar.get(Calendar.YEAR)
-        val month = myCalendar.get(Calendar.MONTH
+        val month = myCalendar.get(Calendar.MONTH)
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
         DatePickerDialog(this, DatePickerDialog.OnDateSetListener{view,selectedYear,selectedMonth,selectedDayOfMonth ->
             //Toast.makeText(this,"btnDatePicker pressed", Toast.LENGTH_LONG).show()
+
             val selectedDate = "$selectedDayOfMonth/${selectedMonth+1}/$selectedYear"
             tvSelectedDate?.text = selectedDate
+
+            val sdf = SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)
+
+            val theDate = sdf.parse(selectedDate)
+
         },
         year,
         month,
