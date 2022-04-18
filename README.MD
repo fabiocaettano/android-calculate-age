@@ -276,3 +276,48 @@ configurar ação do botão para interagir com o componente DatePicker:
 3. Resutlado, após selecionar a data no calendário o componente TextView será preenchido:
 
 ![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson88/screenshot/app-lesson88.png)
+
+<h2>Lição 89 - Calculo da data</h2>
+
+1. Os componente tvSelectedDate recebe a data selecionada no data picker.
+   Já o componente tvAgeInMinutes recebe o calculo realizado no metódo clickDatePicker().
+   E o componente btnDatePicker acessa o metódo clickDatePicker().
+   O metódo clickDatePicker(), utiliza a classe Calendar e DatePickerDialog para
+
+
+``` java
+private fun clickDatePicker(){
+        val myCalendar = Calendar.getInstance()
+        val year = myCalendar.get(Calendar.YEAR)
+        val month = myCalendar.get(Calendar.MONTH)
+        val day = myCalendar.get(Calendar.DAY_OF_MONTH)
+        val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener{_,selectedYear,selectedMonth,selectedDayOfMonth ->
+
+            val selectedDate = "$selectedDayOfMonth/${selectedMonth+1}/$selectedYear"
+            tvSelectedDate?.text = selectedDate
+
+            val sdf = SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)
+
+            val theDate = sdf.parse(selectedDate)
+
+            theDate?.let{
+                val selectedDateInMinutes = theDate.time / 60000
+
+                val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
+
+                currentDate?.let{
+                    val currentDateInMinutes = currentDate.time / 60000
+
+                    val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
+
+                    tvAgeInMinutes?.text = differenceInMinutes.toString()
+                }
+            }
+        },
+        year,
+        month,
+        day)
+        dpd.datePicker.maxDate = System.currentTimeMillis() - 86400000
+        dpd.show()
+    }
+```
