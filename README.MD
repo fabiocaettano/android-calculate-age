@@ -43,7 +43,7 @@ para <b>LinearLayout</b>. E foi incluido as configurações: orientation, backgr
 
 4. Resultado:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson88/screenshot/app-lesson84.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson89/screenshot/app-lesson84.PNG)
 
 
 <h2>Lição 85 - Adicionando mais TextViews e entendo SP, DP e pixels.</h2>
@@ -111,7 +111,7 @@ do botão
 
 5. Resultado:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson88/screenshot/app-lesson85.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson89/screenshot/app-lesson85.PNG)
 
 
 <h2>Lição 86 - Finaliando Interface</h2>
@@ -198,7 +198,7 @@ do botão
 
 5. Resultados:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson88/screenshot/app-lesson86.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson89/screenshot/app-lesson86.PNG)
 
 
 <h2>Lição 87 - Date Picker Dialog</h2>
@@ -233,7 +233,7 @@ configurar ação do botão para interagir com o componente DatePicker:
 
 3. Resultado, ao clicar no botão é exibido um calendário:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson88/screenshot/app-lesson87.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson89/screenshot/app-lesson87.PNG)
 
 
 <h2>Lição 88 - Exibindo a data</h2>
@@ -275,7 +275,7 @@ configurar ação do botão para interagir com o componente DatePicker:
 
 3. Resutlado, após selecionar a data no calendário o componente TextView será preenchido:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson88/screenshot/app-lesson88.png)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson89/screenshot/app-lesson88.png)
 
 <h2>Lição 89 - Calculo da data</h2>
 
@@ -321,3 +321,12 @@ private fun clickDatePicker(){
         dpd.show()
     }
 ```
+
+2. Resultado:
+
+O usuário utiliza o botão "Selected Date" para exibir o Calendário.
+O usuário seleciona uma data e clica em OK.
+O aplicativo calcula a diferença da data selecionada e a data corrente.
+A diferença é calculada em minutos.
+
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson89/screenshot/app-lesson89.png)
