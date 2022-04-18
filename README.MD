@@ -43,7 +43,7 @@ para <b>LinearLayout</b>. E foi incluido as configurações: orientation, backgr
 
 4. Resultado:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson84.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson87/screenshot/app-lesson84.PNG)
 
 
 <h2>Lição 85 - Adicionando mais TextViews e entendo SP, DP e pixels.</h2>
@@ -111,7 +111,7 @@ do botão
 
 5. Resultado:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson85.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson87/screenshot/app-lesson85.PNG)
 
 
 <h2>Lição 86 - Finaliando Interface</h2>
@@ -198,7 +198,7 @@ do botão
 
 5. Resultados:
 
-![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson86/screenshot/app-lesson86.PNG)
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson87/screenshot/app-lesson86.PNG)
 
 
 <h2>Lição 87 - Date Picker Dialog</h2>
@@ -231,3 +231,6 @@ configurar ação do botão para interagir com o componente DatePicker:
     }
 ```
 
+3. Resultado:
+
+![ScreenShot App](https://github.com/fabiocaettano/android-calculate-age/blob/lesson87/screenshot/app-lesson87.PNG)
