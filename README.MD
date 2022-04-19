@@ -1,6 +1,3 @@
-<h1>Curso Udemy - Android 12 & Kotlin Development Masterclass</h1>
-<h3> Instrutor Denis Panjuta </h3>
-
 <h1>App Calculate Age</h1>
 
 <h2>Lição 84 - Configurando a Interface</h2>
@@ -333,5 +330,7 @@ A diferença é calculada em minutos.
 
 
 <h1>Referência</h1>
+
+1. Curso Udemy - Android 12 & Kotlin Development Masterclass
 
 <https://www.udemy.com/share/102Jgo3@-7uk2kJOfwYBE8siVK-4NfFoSO3KPB3dU29_XberNQ51o0o1xaOTFN57QIxXlJdD/>
