@@ -334,4 +334,4 @@ A diferença é calculada em minutos.
 
 <h1>Referência</h1>
 
-![Curso Udemy](https://www.udemy.com/share/102Jgo3@-7uk2kJOfwYBE8siVK-4NfFoSO3KPB3dU29_XberNQ51o0o1xaOTFN57QIxXlJdD/)
+<https://www.udemy.com/share/102Jgo3@-7uk2kJOfwYBE8siVK-4NfFoSO3KPB3dU29_XberNQ51o0o1xaOTFN57QIxXlJdD/>
